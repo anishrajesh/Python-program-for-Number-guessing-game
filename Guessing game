@@ -1,0 +1,19 @@
+import random
+number=random.randint(1,100)
+guesses=0
+while True:
+ print('Type 0 to exit the number game')
+ guess=int(input('enter the number'))
+ if guess==0:
+  print('Thank you')
+  break
+  exit()
+ guesses=guesses+1
+ print('no. of guesses=' , guesses)
+ if guess>number:
+  print('incorrect, the number is greater than the actual one')
+ elif guess<number:
+  print('incorrect, the number is lesser than the actual one')
+ else:
+  print('congrats, you have guessed the right number')
+  break
